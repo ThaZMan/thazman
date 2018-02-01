@@ -4,7 +4,7 @@
   "description": "移动端页面自动适配脚本",
   "main": "rem.min.js",
   "scripts": {
-    "min": "uglify -s rem.js -o rem.min.js"
+    "build": "uglify -s rem.js -o rem.min.js"
   },
   "repository": {
     "type": "git",
