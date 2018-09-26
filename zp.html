@@ -1,0 +1,2909 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color:khaki;color:black">
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player" style="width:100%;height:50em"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      
+var videos = [
+{
+vid: 'E6wD3RSuGEc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QWlggS8bbwE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '067fxuEVmjw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'tECTfB0QGMM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WgXPWva0F94',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '14v0o1_QP5M',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gaxdNqXgQSw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'D_yKMscUIvA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uiyhfvgrVAM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'aD5sJVFNGAM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rPULz0kakhU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7bsx-dKWNy0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vF5TVjTC56E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vuafEdzREBQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'V5oB9zEu0A8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3QRJfdyatn0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'e_AD1aBkDH4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Kd56WCFmBmU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'G6NQJeD9mX0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'f1QU1a3gsEM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7NVvLJ-MJMk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BHoMIpXQYRU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'aDEdcLi53i0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XiKTOe7ZD_w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0y-RkiPhpPY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rznqHawp4Oc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Ldoe4N9G4A4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'AoETiwKEBT0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fYitzTIiUNE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MohwznZXV3g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'krq6-1ht_kk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IMSUdQ3SrLw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yiPecsN-t3g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wm1agsySrl0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'He0lWIDGutc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JGnmfbD20og',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'f9sSXC8vavo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LKaqHapRvVM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rZFHwZp4FJA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GoznGUIGdZM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'm-RzmFTaWCc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0J0KNjh4nAU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6RJUiUFS5Qc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'df68JrM7XdM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'l6lC3t40W7o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'hNN2etNrBoE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qfcmWimCCtA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'l9KeP86wxug',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rfm0u0jJwxY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fgHcCbir84U',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9A1qOioXhsM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'UGLvt7gUvTo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'J-kP6ixtjvo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '2r-rhfYwCdY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WOrcVtblWnI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'aRahueSyAs0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Oc-Gt4T7b2E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'zEARfli4o20',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lVn9sxVQE0w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NgI6np-761w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yxBtOMlGuzc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Z1GmR8zEB7k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '084HwdWngL8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SzfSVXBa-M4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4j6JvzZ_1vo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oD9qa59tAh0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'c2C8zvTqoGo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yYZ4EaLcbVk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6Dyq8LeB65Q',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Nihv0BBqOl8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WfEFtVPFWzw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ThX6cIb1mss',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ckGMP5OxnLg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'h4I8zJoPLZ0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SKpa4bdt5ag',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0kaFQzC91iM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MbPPXGFvdw0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uXdbfHCt2pw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jy2xQC_YtV0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'tK5iAzRWR_k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'd18tyKjFIbM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QpgOW0VJMYA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'CoqELw9NXCs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LrBDgOPCvIk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pGQuHuM3h-0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'mhTCqu7e74M',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-8zFyzmSib0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'KnQaS-uLfWY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6RoY6NYhQ-c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fn9-Oee6-m4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F0RSwdinkAI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'I0HNLkpQbZQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'v8BpSSsMH34',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LCCB0eYNbWI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'AxxjH4aKbJo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'p0N5ooeuNEg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'UDwjpr7lYK0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HbORw5eXsiM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BWW4kX97wTo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dfQNRvOKQSQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-VJ2aK7VYDk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'R3RoATfsOYc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'R5D8SRjgMe8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Lf9egxQsZyY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0g9SazeaeK0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4yjhQJ4zQvE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HurBxdGTIk8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6aAbgtBzDiw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MAULDLsZxnw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'X164Uy9K-yA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8mv5NC0HvJ8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dOVWDXQcu0w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NPpA7FsvWNM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fc0u1-Liamk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gQHLN8mjrp0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HQGxC8HKCD4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qGRglaMRU0Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ztky50T3W2E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JSVbhZY40BA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QpwjHoYJ7NA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RQ78aBeURvs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-8ZKvCWlQUY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gvffwBDN30I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'B4q6nJrBPBY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'g-7im-3h91c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EpKKOzppQeE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'V9WkvBmieGE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'mfLPlqBmwMU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ES-r5Pl7LSg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RFDLjmvNNnU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'DSwAhRZV4XY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F11UGNm6qfc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'w-2hxgeMJrk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fGs-4BpWoW8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'afVDujZ3iXk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3zoThqFpVuQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'sCFGU79rX34',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EAzpn8vsc9k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4hTMZ3G8Hsk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'p7ABkNF0OO4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'I7X9S8q1FXQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Gn2eM1Gdu3g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'p2Z_GkGPJP0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RYrFrjtGTEE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WvpAn6V0hdc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '54QQcnAtz78',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'syq_WuOopUU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-5TjeU4xKqE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8n6bqAEyVLA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qppmz5JNO2Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'UwjNv-VrWDA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'zziU0IbEU-Q',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'cADhLtjWWDg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'h2ptFY5w91w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kcULtxPjD8s',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F3xHo9SXoQI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-GvCfIONCY4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '5k2UhoYF1qo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'twj5AoWHybU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0_O-La8Fe9Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'PZ-BcdgD-1c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'k8eOHNj7Qbs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pVhA2dnoQCs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '2ub4wS_tjY4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jsEERBtMq88',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'tmH_Fai42g8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Ik9PKDi1R94',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bfx19Z5pggU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XItguTFFre0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kJ1scW6vbKY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RpvbhlNDstM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GkJ1nnJPUvE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MDDfJJQrpsg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rQ6v5iFf-rk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'icP1rTgp4Xs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'i-PD7fOhwQ0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rwDzjb8r7m0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'nRPdBffBnUI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'YPI0c_jeqSE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '5i8SyOm3pZw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-Dos1RP-HCE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GbVlTDoO3Ic',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qCH9K01RTlE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bzaEa3DzYHY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fkUPA-d-nfc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'aLzW0dl87JY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'llxR5hbwG4Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '79nhVj8fKNY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oESyZXbHNbQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GH2hQKVMK9I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lkVj1JniLXQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TB3DrTkVgHw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8w0fhZiY24A',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'u3e2luXezW8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'z7zXUa22t2I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '11xX5Q2iNZQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ZssC5Iw4XrA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'hTyoQb-2EVk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NQCuWAaTCP8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9nyFJ-1mjTE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'S5SCXhxNg4A',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_BeVmHbMqAA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'i5XeyLgYZ-E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JYnbHfwbPQw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GMQyHRoiCUA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '5XT36Z5sK-E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WRxPVxTxzzU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F8APwHQUHwY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'n-7Crx3AiWM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'iolLKGbbTrM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ae8E3ANbB9g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RGGv6ntj4Pk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4UNC4Vcv1e8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'm69QDRw4Vno',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lF1xi8kEBno',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'KWf45wqFJNg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'E_exiC9g62E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Bbm3A-aJnSQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8rvsB7lT0e8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '43CBx_aANjQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'd7DT1Z5523s',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TnZmRvPU3xY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'r3vYM0hzZ2Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'G9ba7F9gpcc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'tOCMiu4j7aM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GhQNkcpgBwY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'G9naXmOYAdE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Tl_u30_w6IU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vx2TTzadTaA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dJXevs5RkuY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'OGdwvDG5XZA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'STrYyhEwkbY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vAJRw4flK40',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vQs1uTTjTAM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'A1kS5ZpTt9M',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0z2SKnREPEM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pUqbqffYqTs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_X5qyu8DPM0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'D7rMUvEPXK0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'o1qfZ8q3ljg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'egrN4plxuyQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lbSqkxqIW5I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '0w4AoUSb_0w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'DCtbhjDcTNI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yHmbweBK2qE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RvjJZpl6woY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'N-z9Cvk0hvg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xiaB8XJqyLs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qVbOlAHdasA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'CcHH13T4mpo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_FKgUZaCzNc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pSUVlJPTJVs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xbbdk68-Mfc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QnV07hLEmxI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BssV4DQoEFw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9Cy0mWziFrI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'reL2rggfqnI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'CCGcJiY-rD0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SOgXwElNSpU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HWxEwdGpIPQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'hqXkwfV4TGg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dtSlEqUNf1E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'P7mKTItGVzw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9OrQzrFZeDw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dEThoQxERVw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VqflNjHk-TU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RUAeYL7eAdI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Sl_vckONfGs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6ScjZGArpUs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LMaeHNjoICw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xduIzjF9URo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oZWoQ43Ho1g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '530q4-oxL58',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '1jaLNfKiDRs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rciyCHa6J4o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xIXzx5qjy1c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yHPOiOr94L8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jw-MjVvFjwc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '45Z40zr4BjY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'mFp67DiTba0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pPk7gllRZm4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SMOoJZTy1p0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BRv-K1tMD3U',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Mbgbp_q9E4o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kowAddykKOk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uC3jTJnqFgo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'y079iJ36H4U',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'eFU9Q7NNnGE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6V6MI1ZSRfg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'AxMM7k18tVI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kVCLbIbEKtM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GePYJgW1m7E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QhHFx5UL0xc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'z9jmlBmknIE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dZimXBB3gUQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vuNN1D-FCjs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'S9QVGtqwhXY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '016dZuob2Dc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rI9wns8HqPU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ZIn8Uhpm_Ro',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QmAniHMz6Vg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XM9JBNVYE_w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TU1E4jwquzU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3OpiHSpdm0A',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'G5-W8GqOtSE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jrFgv5R_oiI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'x2lHx5HaaLg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9dPX2cRnw_A',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NQrJEXeQ8xk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'dZ32bP12DoQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'U0OvwUlLx08',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HNhPMjbgkXA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SniYgg_sfAo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ttzLwR6SrKw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IIJxsvqF9AE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pHUJhBv5nWI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ZKPJvDdAY34',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'E0oZZRBIImQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SGHqc09Pu-0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'FEZzVsAabZw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'tSefw2jWHIo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'e0StdRykbU4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'cZMYcfENJE8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wWgHN1brR0Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'w-cGrPLJvXI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LYvPWE696Ms',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wudc8nOSScU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xMwTPlBq2J0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'd-Fh1OFTdVo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F0D8xcx1JNg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xbQ-Qwcuehk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XtdurL_bfsc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EE5HbfUECcE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Vf3vn6c38M0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ehcU90xJrwE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NbesTMutvzI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wT2hd51zgwo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_mq97KuraFE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'NC9aTJ7m-Qc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'CkCi-0llOTY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wo5yyMa1BWQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fPYofAaVG2g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lttqPaaCt0s',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'YM4RQHgYpow',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TJ5uES4Ry2o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LTLD20KIiLM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'OfFljXE47wA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WgvFfFK5KFA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'mqr3JfXkQig',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Vbpok1Dw7uI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3jYZ4NF7mHU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ue8TujFWKjQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LSXu7FusSUk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '-OJai9dKraI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8oE54GSVxUQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'W_LULRj_f4w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kyPQ-rjXtMQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'h0m-doynMnc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4jC67AVcbms',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'C4csI-Dg0pU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QO-ATrciXfA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uDllxTtbzCA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Tb6LFSART8M',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'cyeLHSUEB0w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oaWZnjve5cI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'hi2xsKHKRUM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bS0XrjNaINQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'v52ueRrfMSw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Z2Z7EGPSfDE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '35p4wyuzNY0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oyQklHNlaaw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '51Zo-tpk5wk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qvhjczPD1DA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4c9iNfTMUqE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'X0MblIn-lVc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yrvKjrPgeyM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'hdt8ZD1N-wk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BdsPDIYUxKA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'A8MQMCe1cwE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'RwPDRSVcfJo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bBkMjskogVE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '2Rc_vsIp5tw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_5zXl93LXIE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'FRXb1Lr4G3c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Vw4dkOzpBuE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pRO_6-lyiqc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4wgQvij3rVE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lawmA7O16jE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'lMTahXSEw4w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 's8w6hY9DtCQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WJCC-QMu1Bg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ehqaUjtIul0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'KWHF16xjQmg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WmJBp-l4UO4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pVwzmHx-Q9c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'eP-OLKkbiBc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bB3rwPoDYo4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7XsACXSVhWY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'V6Z_qpqPIl0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gEV4Ebz4Yts',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'y1yjjd1iUJc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bqkGrfc_lng',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kZzjsbIMGaI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IXuIZstyM7E',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'agDpp41mItw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9XSkRuPuthY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rlPTPavbJ10',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8oRSpyFvPkY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kx1fglFeX7k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JFM_npgUD2c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IW3lfpHNI20',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jUo5bRJjqZ8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'iBmDJunE4vU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'SeyBGbJRRe8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TBeXP-MSt8I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TJyyyBJoKXU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'KsVv2Su3Ab4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'U8hfs9zWMVc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'K9ZkY-6M5qw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4cHap89_lFk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Fk48G6aG7lo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LgqSFD1Uxrg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IYkuBw7saOE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 've_a4vweeyQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rqFf7-SKRR4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8dJD9l3E7Gg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'PZ2cnlDKVPI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yrChttkOoZU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'S-Xz7D2GcYA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7dS6n1LBuhs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'KmnAL60mfSg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GBJsFocwVWA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'cj_Nrx0kQ34',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '90srRJ_ks6o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gm9Eta491O8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_0ujx2JnjkA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QLNM_cW1SWk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'sRY3dKpRskE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'im9oFIVtvcc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8zgOYZDS1Tg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EWTSeTxKLJo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_QEtbDrZwrg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'zHV4XVqnSHE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ci84XpISE7Q',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'yJBnZ2rzxeU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vQSCKAPqxoo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'haH4XvlDHTI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MfRB57_BDMU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ukcaVYsgvJg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'nJlDkGUA2YA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '2I1IPb2LLDM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VzcPmlbhiDc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HmueO3GtP6A',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'V6iEh73ojCw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6j_kr1zALJs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'gIT1AoTKASs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_1X2aAdd2Ao',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'zL8SB1YHzFU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'zHnYFP73MKE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3eDO57Hf3rs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'QecWVgFl2l4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7jbhCOCdHUw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MeyoejMwqiw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_w1EFWcTEJo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7L1NoPe4CKM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rFr9HIEOQBc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'fqCt55WOfzY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TzbqiXi645M',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IAsaFD9MQ8I',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bpx3SDsnfYY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'TxdPduFWP2c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'iShzMnR7-qo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'b4dspwogDzw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'kj-O-FnpGjQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6TsIMHvugV8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'awxuj9bTJrc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'brOZoC30oPY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '9JNvRes8kec',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XSuqCI8VFWE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ResWBN47PGk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'P6JNqMjouNc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'rnM77CIkjQU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VxmvKj3SJGw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EI1hXU6R3IQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'XKRrPQAbic4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ngjDggdB9J4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4ncBtYuoO_w',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uLQogkaPUpg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BQqcFtvFtno',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_ik61qj_G04',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'v4rQSykog5Y',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'LsY7vLqIi-c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ESl6t7Or-z8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jDC2pI1lMcY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'F2XQUzKsxNg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'W1QU2Vao0Jo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'UM28uXIkPWk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uLNOtLdvSsc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'MqTreOK5YUQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3PBaGj2jpkA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BJiSuztcwL4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pLXOp0bHDOs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'b5GFyIHhpgg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'pWXuzZ26yp0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'US92PR1tI1o',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'GpmgP9DcOU8',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BHDGQtu5hB4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '6ll-_rxky2k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VwvR-B2xKrs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'bZvMzyDbidc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '34no2HhOVGQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'z6gbXInzO-g',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VMK8ID4RLZQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ggLqL61z-I4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ebdjnuAYotc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Hyoy1aRprsY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'z4heiQC6RxA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '3wdfFuO3Rqs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '1hAwxS4kXJE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VtK7HdsH_ZU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JvCyPTrnVrY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '5t4xS2PqFFA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'W3vPq047-8s',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'DvJ-wegyQNk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wkscwBH90sU',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qvz3ANcAvSc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Vtu0_wwMtgg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'qk7DlYcQ0uM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '5AXeKZBBYvw',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'mv04aKBhZ9U',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '8n16i8M3hqE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Vk0MGPjWbtE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'P7MYcR7wdz4',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'BOW8SzPcUeY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'uvaryF1EhfA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'oRMPJfberWc',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Fh1n-TuJTQo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'U5-2VQH8t3c',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'jtvWcPJq3po',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '12FMjfFJrG0',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'a2ZiNAr_xZk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_ApdGizJECo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'xnZ-5DZhySg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'P0dXtOVi2yo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'EkQchMzvWDY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'JyTS-gfwcJQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'VS26wbFePSk',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'WH6cvKf5ttY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '7NNBQJm18fI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_ydrCwyvtYE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'C70wWScZWgo',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'J-k0qdoZYQI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'ZCnUTIaDIRY',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'wO0w9Vl2HjI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'G9vtof44lKs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'CdfrF4Q6TkQ',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'HYmVlpgT3pM',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_dlEm_2ke8k',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'aSQBuorvgXI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'sKOp4vcb6RA',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'vGxo2X4B_LE',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '4fLRDDGj_wI',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'Wxr89gxP9Dg',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: 'IkmBPtglbDs',
+          startSeconds: 10,
+          endSeconds: 15
+        },
+{
+vid: '_w6wU2KPPwk',
+          startSeconds: 12,
+          endSeconds: 306
+        }
+
+
+      ];
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady()
+        {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'Sa6WLMt-3oQ',
+'startSeconds': 5,
+               'endSeconds': 60,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+
+      }
+
+
+      var firstTime = 1;
+      function onPlayerReady(event)
+    {
+
+        if( firstTime == 1 )
+        {
+alert('dasdads');
+            event.target.loadVideoById({videoId:"Sa6WLMt-3oQ",
+                     startSeconds:12,
+                     endSeconds:213,
+                     suggestedQuality:"small"});
+            firstTime--;
+
+        }
+
+
+      }
+
+        var skip = 0; //the YT.PlayerState.ENDED event is sent twice between videos and so we need to ignore it once otherwise it plays every second video in the list
+        function onPlayerStateChange(event)
+        {
+            if (event.data == YT.PlayerState.ENDED)
+            {
+                if ( videos.length != 0 && skip == 0)
+                {
+                var nextVideo = videos.pop();
+                event.target.loadVideoById({
+                videoId: nextVideo.vid,
+                startSeconds: nextVideo.startSeconds,
+                endSeconds: nextVideo.endSeconds
+                });
+                skip++;
+                }
+                else
+                {
+
+                    skip = 0;
+
+                }
+
+          }
+}
+    </script>
+  </body>
+</html>
