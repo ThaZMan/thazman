@@ -47,7 +47,7 @@ function search()
 	$("#results").hide();
 	$("#resultsChannel").hide();
 	
-	var url = $('#search_box').val();
+	var name = $('#search_box').val();
 	//var result = urlRegex.exec(url);
 	//var channelResult = channelUrlRegex.exec(url);
 	/*
@@ -58,7 +58,7 @@ function search()
 		return;
 	}
 */
-	searchByChannel( result );
+	searchByChannel( name );
 	
 }
 
