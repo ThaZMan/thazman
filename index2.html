@@ -65,6 +65,14 @@ function search()
 function searchByChannel( name )
 {
 	var l = name.slice(0, 1);
+
+	if( l.search(/[A-z]/i) == -1 )
+	{
+
+		l = "0"; //0.json holds urls for all channel names begging with a number or character
+
+	}
+
 	var filename = "https://raw.githubusercontent.com/ZackRadnedge/zackradnedge.github.io/master/jsdata/channel/"+l+".json";
 	
 	$("#msg").text("Searching...");
