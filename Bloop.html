@@ -2,10 +2,10 @@
 <html>
 <head><title>Archive Team Twitch.tv Video Gile Archive Search</title>
 
-<body>
+<body style="text-align:center;background-color:#333;color:white">
 <noscript>This search feature requires JavaScript. Sorry!</noscript>
 
-<p>Welcome to the Archive Team Blip.tv video file archive search</p>
+<p style="font-size:xx-large">Welcome to the Archive Team Blip.tv video file archive search</p>
 <form onsubmit="return false;">
 <p>
 
@@ -13,16 +13,15 @@ Enter the Blip TV channel name please: </p>
 <input id="search_box" type="url"
 	value="historybeat"
 	style="width:90%">
-	<button id="search_button">Search!</button>
+	</br>
+	<button id="search_button" style="font-size:x-large">Search!</button>
 </form>
 
 <div id="msg" style="font-weight: bold"></div>
 
-<div id="resultsChannel" style="display:none;">
+<div id="resultsChannel" style="display:none;text-align: left">
 	<p>The video URLs are:</p>
 	<div id="url_container_channels"></div>
-	
-	<p>Search the above URLs again to see the media URLs.</p>
 </div>
 
 <p>If you are using Internet Explorer, please use version 9 or higher.</p>
@@ -91,7 +90,7 @@ function searchByChannel( name )
 
 			texts.push('<a href="' + url + '">' + url + '</a>');
 			//texts.push('<button onclick="$(\'#search_box\').val(\'' + url + '\');$(\'#search_button\').click()">Search FLV</button><br>');
-			
+
 		}
 		
 		$("#url_container_channels").html(texts.join('\n'));
