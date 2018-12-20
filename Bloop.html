@@ -10,7 +10,7 @@
 <p>
 
 Enter the Blip TV channel name please: </p>
-<input id="search_box" type="url"
+<input id="search_box" style="font-size:x-large" type="url"
 	value="historybeat"
 	style="width:90%">
 	</br>
@@ -19,13 +19,12 @@ Enter the Blip TV channel name please: </p>
 
 <div id="msg" style="font-weight: bold"></div>
 
-<div id="resultsChannel" style="display:none;text-align: left">
-	<p>The video URLs are:</p>
+<div id="resultsChannel" style="display:grid;text-align: left">
 	<div id="url_container_channels"></div>
 </div>
 
 <p>If you are using Internet Explorer, please use version 9 or higher.</p>
-<p>Problems? Please <a href="hhttps://github.com/ZackRadnedge/bliptv-index/issues">file an issue</a></p>
+<p>Problems? Please <a href="https://github.com/ZackRadnedge/bliptv-index/issues">file an issue</a></p>
 <p><a href="http://archiveteam.org/index.php?title=Blip.tv">About the project.</a></p>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -88,7 +87,7 @@ function searchByChannel( name )
 			var id = videoIds[i];
 			var url = 'https://web.archive.org/web/*/http://blip.tv/file/get/' + name + '-' + id;
 
-			texts.push('<a href="' + url + '">' + url + '</a>');
+			texts.push('<a href="' + url + '">' + url.slice( 54, url.length ) + '</a>');
 			//texts.push('<button onclick="$(\'#search_box\').val(\'' + url + '\');$(\'#search_button\').click()">Search FLV</button><br>');
 
 		}
