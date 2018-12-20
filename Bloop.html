@@ -73,6 +73,7 @@ function searchByChannel( name )
 	$.getJSON( filename )
 	.done( function( data )
 	{
+		alert( videoIds );
 		var videoIds = data[ name ];
 		
 		if ( videoIds === undefined )
