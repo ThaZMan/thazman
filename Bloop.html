@@ -6,6 +6,7 @@
 
 </head>
 <body style="text-align:center;background-color:#333;color:white">
+	
 <noscript>This search feature requires JavaScript. Sorry!</noscript>
 <style>
 	#resultsChannel a {color:black}
@@ -16,10 +17,11 @@ a {color:white}
 <p>
 
 Enter the Blip TV channel name please: </p>
-<input id="search_box" style="font-size:x-large;width: 50%;text-align: center;margin-bottom: 4px"
+<div class="xyz" style="width:50%;height:1%;margin: auto;">
+<input id="search_box" style="font-size:x-large;width: 100%;text-align: center;margin-bottom: 4px"
 	value="historybeat"
-	style="width:90%">
-	</br>
+	style="width:90%"></div>
+</br>
 	<button id="search_button" style="font-size:x-large">Search!</button>
 </form>
 
@@ -117,5 +119,123 @@ function searchByChannel( name )
 
 $('#search_button').click(search);
 </script>
+
+
+
+<style>
+	.xyz {
+	  margin: 10%;
+	  height: 50vh;
+	  background: none;
+	  display: flex;
+	  justify-content: center;
+	  position: relative;
+	  align-items: center;
+	  overflow: hidden;
+	}
+	</style>
+	
+	<script type="text/javascript">
+	(() => {
+		const colors = ["DB4437", "0F9D58", "F4B400", "4285F4"];
+		const target = document.querySelector(".xyz");
+		const css = document.styleSheets[document.styleSheets.length - 1];
+	
+		let svg;
+	
+		const genSvg = () => {
+			target.insertAdjacentHTML(
+				"afterbegin",
+				`<svg id="svg-spinner" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none" xmlns="http://www.w3.org/2000/svg"></svg>`
+			);
+			console.log(target.firstChild);
+			svg = target.firstChild;
+		};
+	
+		genSvg();
+	
+		const genRects = target => {
+			colors.forEach((color, i) => {
+				svg.insertAdjacentHTML(
+					"beforeend",
+					`<rect x="2.5" y="2.5" fill="none" stroke-width="5" rx="5"/>`
+				);
+				svg.lastChild.setAttribute("stroke", "#" + colors[i]);
+			});
+		};
+	
+		genRects(target);
+	
+		const setRectAttributes = () => {
+			const wh = {
+				w: svg.clientWidth,
+				h: svg.clientHeight
+			};
+			for (let child of svg.children) {
+				child.style.width = wh.w - 5;
+				child.style.height = wh.h - 5;
+			}
+		};
+	
+		const genKeyFrames = (i, len) => {
+			css.insertRule(
+				`
+	@keyframes dash_${i} {
+	  from {
+		  stroke-dashoffset: ${(i + 1) * len};
+	
+	  }
+	  to {
+		  stroke-dashoffset: ${i * len};
+	
+	  }
+	}
+	`,
+				css.cssRules.length
+			);
+		};
+	
+		const delAllKeyFrames = len => {
+			for (let i = 0; i < len; i++) {
+				css.deleteRule(css.cssRules.length - 1);
+			}
+		};
+	
+		let keyFramesExist = false;
+	
+		const rotateColors = delay => {
+			colors.unshift(colors.pop());
+			const len = svg.children[0].getTotalLength() / svg.children.length;
+			if (keyFramesExist) {
+				delAllKeyFrames(svg.children.length);
+			}
+			for (let i = 0; i < svg.children.length; i++) {
+				genKeyFrames(i, len);
+				const child = svg.children[i];
+				// reset for resonsiveness/animation
+				child.setAttribute(
+					"stroke-dasharray",
+					`${len}, ${len * (svg.children.length - 1)}`
+				);
+	
+				child.style.animation = `dash_${i} ${delay * 0.001}s linear infinite`;
+			}
+			keyFramesExist = true;
+			const child = svg.firstChild;
+			svg.removeChild(child);
+			svg.appendChild(child);
+		};
+	
+		const loopDelay = 1000;
+	
+		const main = () => {
+			setRectAttributes();
+			rotateColors(loopDelay);
+		};
+		main();
+		setInterval(main, loopDelay);
+	})();
+	</script>
+
 </body>
 </html>
